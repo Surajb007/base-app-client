@@ -1,9 +1,12 @@
 import React from "react";
 
-export default function Dashboard() {
+const Dashboard = props => {
   return (
     <div>
       <h1>Dashboard</h1>
+      <h1>Status: loggedIn: {props.loggedInStatus}</h1>
     </div>
   );
-}
+};
+
+export default Dashboard;
